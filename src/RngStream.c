@@ -2,13 +2,11 @@
  *
  * File:           RngStream.c for multiple streams of Random Numbers
  * Language:       ANSI C
- * Copyright:      Pierre L'Ecuyer, University of Montreal
- * Notice:         This code can be used freely for personnal, academic,
- *                 or non-commercial purposes. For commercial purposes, 
- *                 please contact P. L'Ecuyer at: lecuyer@iro.UMontreal.ca
+ * Copyright:      Pierre L'Ecuyer, University of Montreal (lecuyer@iro.UMontreal.ca)
+ * Notice:         This code is released under the GPL license
  * Date:           14 August 2001
  *
-\***********************************************************************/
+\***********************************************************************/ 
 
 
 #include "RngStream.h"

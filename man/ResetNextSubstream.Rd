@@ -12,7 +12,6 @@
 \arguments{
   \item{name}{a character string giving the name of the stream.}
  }
-}
 \details{\code{.lec.ResetNextSubstream} reinitializes the stream to the
   beginning of its next substream.
 
