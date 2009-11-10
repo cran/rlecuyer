@@ -23,7 +23,9 @@ void r_create_current_stream()
 
 void r_remove_current_stream()
 {
-  RngStream_DeleteStream(&current_stream);
+  free(current_stream);
+  /*    RngStream_DeleteStream(&current_stream);*/
+
   return;
 }
 

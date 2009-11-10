@@ -19,7 +19,7 @@ integer vectors of length 6: Ig gives the initital state of the
 stream, Bg gives the starting state of the substream that contains the
 current state, Cg gives the current state.  Function
 \code{.lec.SetPackageSeed} sets Cg, Bg and Ig to the value of
-\code{seed}. Function \code{.lec.SetSeed} sets Ig to \code{seed}. L'Ecuyer recommends to use the \code{\link[rlecuyer]{ResetStream}} functions instead of \code{SetSeed}.} 
+\code{seed}. Function \code{.lec.SetSeed} sets Ig to \code{seed}. L'Ecuyer recommends to use the \code{\link[=.lec.ResetStartStream]{ResetStream}} functions instead of \code{SetSeed}.} 
 
 \value{The (possibly modified) seed that has been used.}
 \keyword{distribution}
