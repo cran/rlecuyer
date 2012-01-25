@@ -76,8 +76,7 @@
                                            c(g$Anti, g$IncPrec))
       .lec.Random.seed.table$name <<- c(.lec.Random.seed.table$name, g$name)
     } else { # entry found in table
-      print(paste("*** Warning: Name ",name," already in use.",sep=""))
-      print("*** The state will be rewritten.")
+      warning("Name ", name, " already in use. Its state is overwritten.", immediate. = TRUE)
       .lec.SaveStateList(g)
     }
   }
@@ -91,9 +90,8 @@
   for (i in 1:ln) {
 	name <- names[i]
   	g <- .lec.GetStateList(name)
-  	print(paste("The current state of the Rngstream ",name,":",sep=""),
-        	quote=FALSE)
-  	print(c("Cg = ",g$Cg),quote=FALSE)
+  	cat("\nThe current state of the Rngstream ",name,":\n")
+  	cat("Cg = ", g$Cg)
 	}
 }
 
@@ -105,13 +103,12 @@
   for (i in 1:ln) {
 	name <- names[i]
   	g <- .lec.GetStateList(name)
-  	print(paste("The Rngstream ",name,":",sep=""),
-        	quote=FALSE)
-  	print(c("Anti = ",g$Anti),quote=FALSE)
-  	print(c("IncPrec = ",g$IncPrec),quote=FALSE)
-  	print(c("Ig = ",g$Ig),quote=FALSE)
-  	print(c("Bg = ",g$Bg),quote=FALSE)
-  	print(c("Cg = ",g$Cg),quote=FALSE)
+  	cat("\nThe Rngstream ",name,":\n")
+  	cat("Anti = ",g$Anti)
+  	cat("IncPrec = ",g$IncPrec, "\n")
+  	cat("Ig = ",g$Ig, "\n")
+  	cat("Bg = ",g$Bg, "\n")
+  	cat("Cg = ",g$Cg, "\n")
 	}
 }
 
@@ -122,10 +119,9 @@
     seed<-c(seed,rep(tmpseed,6-ll))
   }
   if (ll > 6) {
-    print("*** Warning: Seed may not exceed length of 6",quote=FALSE)
-    seed<-seed[1:6]
-    print("*** Warning: Seed truncated to",quote=FALSE)
-    print(seed,quote=FALSE)
+  	seed<-seed[1:6]
+    warning("Seed may not exceed the length of 6. Truncated to ", 
+    		paste(seed, collapse=', '))
   }
   return(seed)
 }
@@ -197,7 +193,7 @@
     name <- names[i]
     which <- .lec.which.stream(name)
     if (which == 0) {# not in the table
-      print(paste("*** Warning: Stream ",name," does not exist."))
+      warning("Stream ",name," does not exist.", immediate. = TRUE)
     } else { # found
       if (length(.lec.Random.seed.table$name) > 1) {
         .lec.Random.seed.table$Cg<<-.lec.Random.seed.table$Cg[-which,]

@@ -14,8 +14,7 @@ void r_create_current_stream()
  current_stream = (RngStream) malloc (sizeof (struct RngStream_InfoState));
 
  if (current_stream == NULL) {
-    printf ("r_create_current_stream: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_create_current_stream: No more memory\n\n");
   }
  current_stream->name="";
   return;
@@ -80,8 +79,7 @@ SEXP r_set_stream_seed(SEXP sexp_seed, SEXP sexp_streamCg,SEXP sexp_streamBg,
 
   stream = (RngStream) malloc (sizeof (struct RngStream_InfoState));
   if (stream == NULL) {
-    printf ("r_set_stream_seed: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_set_stream_seed: No more memory\n\n");
   }
  
   for (i=0; i<6; i++) {
@@ -96,8 +94,7 @@ SEXP r_set_stream_seed(SEXP sexp_seed, SEXP sexp_streamCg,SEXP sexp_streamBg,
   stream->name = malloc(len+1);
   if (stream->name == NULL) {
       free(stream);
-      printf("r_set_stream_seed: No more memory\n\n");
-      exit (EXIT_FAILURE);
+      error("r_set_stream_seed: No more memory\n\n");
     }
   strncpy(stream->name, name, len+1);
 
@@ -135,8 +132,7 @@ SEXP r_randU01 (SEXP sexp_streamCg,SEXP sexp_streamBg,SEXP sexp_streamIg,
 
   stream = (RngStream) malloc (sizeof (struct RngStream_InfoState));
   if (stream == NULL) {
-    printf ("r_randU01: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_randU01: No more memory\n\n");
   }
  
   for (i=0; i<6; i++) {
@@ -151,8 +147,7 @@ SEXP r_randU01 (SEXP sexp_streamCg,SEXP sexp_streamBg,SEXP sexp_streamIg,
   stream->name = malloc(len+1);
   if (stream->name == NULL) {
     free(stream);
-    printf("r_randU01: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_randU01: No more memory\n\n");
   }
   strncpy(stream->name, name, len+1);
 
@@ -187,8 +182,7 @@ SEXP r_reset_next_substream (SEXP sexp_streamCg,SEXP sexp_streamBg,
 
   stream = (RngStream) malloc (sizeof (struct RngStream_InfoState));
   if (stream == NULL) {
-    printf ("r_reset_next_substream: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_reset_next_substream: No more memory\n\n");
   }
  
   for (i=0; i<6; i++) {
@@ -203,8 +197,7 @@ SEXP r_reset_next_substream (SEXP sexp_streamCg,SEXP sexp_streamBg,
   stream->name = malloc(len+1);
   if (stream->name == NULL) {
     free(stream);
-    printf("r_set_stream_seed: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_set_stream_seed: No more memory\n\n");
   }
   strncpy(stream->name, name, len+1);
 
@@ -240,8 +233,7 @@ SEXP r_advance_state (SEXP sexp_e, SEXP sexp_c,
 
   stream = (RngStream) malloc (sizeof (struct RngStream_InfoState));
   if (stream == NULL) {
-    printf ("r_advance_state: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_advance_state: No more memory\n\n");
   }
  
   e = REAL(sexp_e)[0];
@@ -258,8 +250,7 @@ SEXP r_advance_state (SEXP sexp_e, SEXP sexp_c,
   stream->name = malloc(len+1);
   if (stream->name == NULL) {
     free(stream);
-    printf("r_set_stream_seed: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_set_stream_seed: No more memory\n\n");
   }
   strncpy(stream->name, name, len+1);
 
@@ -303,8 +294,7 @@ void r_set_current_stream (SEXP sexp_streamCg,SEXP sexp_streamBg,
   current_stream->name = malloc(len+1);
   if (current_stream->name == NULL) {
     free(current_stream);
-    printf("r_set_current_stream: No more memory\n\n");
-    exit (EXIT_FAILURE);
+    error("r_set_current_stream: No more memory\n\n");
   }
   strncpy(current_stream->name, name, len+1);
 
@@ -340,7 +330,7 @@ SEXP r_get_current_stream()
 double *user_unif_rand ()
 {
   if (!current_stream) {
-    printf("No stream created yet!");
+    Rprintf("No stream created yet!");
     return NULL;
   }
   rn = RngStream_RandU01(current_stream);
