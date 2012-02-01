@@ -1,9 +1,9 @@
-.First.lib <- function (lib, pkg) {
+.onLoad <- function (lib, pkg) {
     library.dynam("rlecuyer", pkg, lib)
     .lec.init()
 }
 
-.Last.lib <- function (libpath) {
+.onUnload <- function (libpath) {
   .lec.exit()
   library.dynam.unload("rlecuyer", libpath)
 }

@@ -1,8 +1,8 @@
-04f7c7aaa8c4d7c5b8aa9bb65796af6e *ChangeLog
-5cc851260354a504615a1de9dc4b10dd *DESCRIPTION
+b5a430ea6cf455334645d9a320098d8b *ChangeLog
+d455952fe2dd174f925fb3ca121a53f4 *DESCRIPTION
 8836d7b6a5d2c9873a2579ef6131e607 *NAMESPACE
 f799d96cdb66530cb3b0f7716a8b38cd *R/rlecuyer.R
-2e0f6c7c1eb250731facbaf00f5c1d9f *R/zzz.R
+1071f79b08ff9d62d7edfc94f6837d2b *R/zzz.R
 154330899fc7e2362e056334271a5b64 *man/AdvanceState.Rd
 e872d228edbd54ad9593fdaac49936c1 *man/CreateStream.Rd
 c44374abfee24bace853fa041b0ceb51 *man/CurrentStream.Rd

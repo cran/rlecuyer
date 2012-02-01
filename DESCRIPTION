@@ -1,6 +1,6 @@
 Package: rlecuyer
-Version: 0.3-2
-Date: 2012/01/25
+Version: 0.3-3
+Date: 2012/02/01
 Title: R interface to RNG with multiple streams
 Author: Hana Sevcikova <hanas@u.washington.edu>, Tony Rossini
         <anthony.rossini@novartis.com>
@@ -12,6 +12,6 @@ Description: Provides an interface to the C implementation of the
         parallel R applications.
 License: GPL (>= 2)
 URL: http://www.iro.umontreal.ca/~lecuyer/myftp/papers/streams00.pdf
-Packaged: 2012-01-26 01:35:12 UTC; hana
+Packaged: 2012-02-01 23:33:05 UTC; hana
 Repository: CRAN
-Date/Publication: 2012-01-26 07:43:46
+Date/Publication: 2012-02-02 07:29:27
