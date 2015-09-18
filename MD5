@@ -1,7 +1,7 @@
-b5a430ea6cf455334645d9a320098d8b *ChangeLog
-d455952fe2dd174f925fb3ca121a53f4 *DESCRIPTION
+c42fb6ff6c49b6f1bc8d11013b17c443 *ChangeLog
+2f27e71db5fcfd1dff7435b4ef61fcd1 *DESCRIPTION
 8836d7b6a5d2c9873a2579ef6131e607 *NAMESPACE
-f799d96cdb66530cb3b0f7716a8b38cd *R/rlecuyer.R
+6985537e40df3341dd5ef32c52a2ec14 *R/rlecuyer.R
 1071f79b08ff9d62d7edfc94f6837d2b *R/zzz.R
 154330899fc7e2362e056334271a5b64 *man/AdvanceState.Rd
 e872d228edbd54ad9593fdaac49936c1 *man/CreateStream.Rd
@@ -18,4 +18,4 @@ bac0043a272ed74a1d5077443224bb29 *man/internal.Rd
 fee09c99b4ced5cbcfd8433c92fdf8f4 *man/uniform.Rd
 03879a1db3082baf6ea30ae122f6b7ef *src/RngStream.c
 0a6c741f540ebe35ce8ef5e36946640c *src/RngStream.h
-f4ec786a50a6165f9c862769a64bd7cb *src/RngWrap.c
+77b0bcd49d2be0193cbeb0c8957fb9e2 *src/RngWrap.c
