@@ -1,5 +1,5 @@
-c42fb6ff6c49b6f1bc8d11013b17c443 *ChangeLog
-ed7612c4d990ae56e153999a2916dc01 *DESCRIPTION
+0c4cb1929694c5dbdd8f2799c5d43a3d *ChangeLog
+0484c6503e2658106294756d3ca1e736 *DESCRIPTION
 8836d7b6a5d2c9873a2579ef6131e607 *NAMESPACE
 6985537e40df3341dd5ef32c52a2ec14 *R/rlecuyer.R
 1071f79b08ff9d62d7edfc94f6837d2b *R/zzz.R
@@ -19,3 +19,4 @@ fee09c99b4ced5cbcfd8433c92fdf8f4 *man/uniform.Rd
 237561af8bea52e52fcad435869eb8b4 *src/RngStream.c
 0a6c741f540ebe35ce8ef5e36946640c *src/RngStream.h
 8ada2ffff82b8101032ad4c4766019fe *src/RngWrap.c
+fc13d1c121f59935243446d9fdc51a0a *src/zzz.c
