@@ -1,5 +1,5 @@
-20bbd3f6b9f4c96482893cfd46f365fe *ChangeLog
-f0cea2abd07f136c4ffc78ce4ad57c37 *DESCRIPTION
+880e254a95325b8fd289d3c1cda1b5f7 *ChangeLog
+0b5412757f274db643d28a4aeb5de6a7 *DESCRIPTION
 68e160c2b7334737621652a38df6944b *NAMESPACE
 97722917204e5f57dda9934fc10068fb *R/rlecuyer.R
 1071f79b08ff9d62d7edfc94f6837d2b *R/zzz.R
@@ -18,7 +18,7 @@ d054e62c7ed895754d7e85910a7afebb *man/SetAntithetic.Rd
 981ed295a76635b263700e97b02b6acf *man/internal.Rd
 8a5120cd5f75ce9bb954a00a7475d83f *man/rlecuyer-package.Rd
 fee09c99b4ced5cbcfd8433c92fdf8f4 *man/uniform.Rd
-237561af8bea52e52fcad435869eb8b4 *src/RngStream.c
+c3c1494c5d0d10f16c192576ff717993 *src/RngStream.c
 0a6c741f540ebe35ce8ef5e36946640c *src/RngStream.h
 0bb2cdac433b3aa135d0350374ed4df3 *src/RngWrap.c
 945df2795dbe8cb44b2b5b03d0f9f18c *src/zzz.c
